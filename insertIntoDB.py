@@ -42,31 +42,8 @@ def updateData():
                 file.close()
                 #if data.find(NameTxt.get()):
                 newName = data.replace(NameTxt.get() + ', ', updateNameTxt.get() + ', ')
-                newAmount = data.replace(AmountTxt.get() + ', ', updateAmountTxt.get() + ', ')
-                newCost = data.replace(CostTxt.get() + ', ', updateCostTxt.get() + ', ')
-                newType = data.replace(typeTxt.get() + '\n', updatetypeTxt.get() + '\n')
-
                 file = open("database.txt", 'w')
                 file.write(newName)
-                file.write(newAmount)
-                file.write(newCost)
-                file.write(newType)
-
-
-                    #file.write(newName)
-                #for line in lines:
-                    #if line.find(NameTxt.get()):
-
-                        #file.write(newName)
-                        #file.write(line)
-
-                #data.replace(NameTxt.get() + ', ', updateNameTxt.get() + ', ')
-                # text_file.write(AmountTxt.get() + ', ')
-                # text_file.write(CostTxt.get() + ', ')
-                # text_file.write(typeTxt.get() + '\n')
-
-
-
 
 
         updateNameLabel = Label(myInventoryForm, text="Replace Name", width=10)
